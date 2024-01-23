@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 980px;
+  min-height: 100vh;
+  margin: auto;
+  padding: auto;
+}
+
+body,
+html,
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.leftcontainer {
+  background-color: #323e8d;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3rem;
+}
+.rightcontainer {
+  margin: 3rem;
+}
+
+p,
+.contactinfo,
+.title,
+.employment-list,
+.employment-item {
+  font-family: inherit; /* Inherits the font-family from the parent */
+}
+
+address a {
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+}
+address i {
+  color: brown;
+}
+address {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.profile p {
+  margin-bottom: 10px;
+  padding: 0.5rem;
+}
+.profilepic {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #323e8d;
+}
+.profilepic img {
+  width: 21em;
+  height: 21em;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+  box-shadow: black;
+}
+.education-list ul {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.contactinfo,
+.title,
+.employment-list,
+.employment-item {
+  font-family: "Open Sans", sans-serif;
+}
+
+.title {
+  color: #323e8d;
+  font-size: 1.6rem;
+}
+.section-header {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  margin: 2rem;
+  font-size: 2rem;
+}
+.work-experience .section-header {
+  color: #323e8d;
+  margin-bottom: 2rem;
+}
+.namebox {
+  margin-top: 4rem;
+}
+.resume-header {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #323e8d;
+  width: 100%;
+  font-size: 5rem;
+}
+
+.title-header {
+  font-family: "Montserrat", sans-serif;
+  background-color: #323e8d;
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5rem;
+}
+
+.employment-list {
+  list-style: none;
+  color: #919191;
+}
+
+.company-year {
+  font-style: italic;
+  color: #919191;
+  margin-bottom: 1rem;
+}
+.work-experience p {
+  color: #919191;
+  margin-bottom: 1rem;
+}
+
+.work-experience .section-header {
+  margin-left: -0.3rem;
+  margin-bottom: 3rem;
+}
+
+ul,
+li,
+p {
+  font-size: 1.4rem; /* Du kan ändra detta värde efter dina önskemål */
+}
+
+.namebox2 {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .container {
+    grid-template-columns: 1fr; /* Ändra layouten till en kolumn på små skärmar */
+  }
+  .leftcontainer {
+    padding-left: 0; /* Återställ padding till ursprungliga värdet */
+  }
+  .profilepic {
+    order: 1; /* Ändra ordningen så att .profilepic kommer först i flödet */
+  }
+  .resume-header,
+  .title-header {
+    order: 2; /* Ändra ordningen så att .resume-header och .title-header kommer efter .profilepic */
+    margin-top: 1rem; /* Justera toppmarginalen för att skapa lite utrymme */
+  }
+  .namebox2 {
+    display: block;
+    margin-left: 2rem;
+  }
+  .resume-header {
+    color: white;
+  }
+  .title-header {
+    background-color: white;
+    color: #323e8d;
+  }
+  .namebox {
+    display: none;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .resume-header {
+    font-size: 3rem;
+  }
+  .title-header {
+    font-size: 1.5rem;
+  }
+}
