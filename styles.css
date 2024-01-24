@@ -50,7 +50,7 @@ p,
 .title,
 .employment-list,
 .employment-item {
-  font-family: inherit; /* Inherits the font-family from the parent */
+  font-family: inherit;
 }
 
 address a {
@@ -63,7 +63,7 @@ address i {
 }
 address {
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .profile p {
@@ -104,29 +104,37 @@ img {
 
 .title {
   color: #323e8d;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .section-header {
   font-family: "Montserrat", sans-serif;
   color: white;
   text-transform: uppercase;
   margin: 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .work-experience .section-header {
   color: #323e8d;
   margin-bottom: 2rem;
 }
-.namebox {
-  margin-top: 4rem;
+
+.namebox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 80%;
+  justify-self: center; 
+  margin: auto;
 }
+
 .resume-header {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   text-transform: uppercase;
   color: #323e8d;
   width: 100%;
-  font-size: 5rem;
+  font-size: 4.5rem;
+  margin-top: 2rem;
 }
 
 .title-header {
@@ -135,11 +143,13 @@ img {
   color: white;
   font-weight: lighter;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+  
 }
 
 .employment-list {
@@ -165,9 +175,28 @@ img {
 ul,
 li,
 p {
-  font-size: 1.4rem; /* Du kan ändra detta värde efter dina önskemål */
+  font-size: 1.3rem; 
 }
 
+.interests p{
+  font-size: 3rem;
+  color: #323e8d;
+}
+.interests i{
+  margin: 1.5rem;
+}
+
+.skills li{
+  display: grid;
+  grid-template-columns: 1fr 1 fr;
+  list-style: none;
+}
+
+.interests .section-header{
+  color: #323e8d;
+  margin-left: 0;
+  margin-top: 3rem;
+}
 .namebox2 {
   display: none;
 }
@@ -184,8 +213,8 @@ p {
   }
   .resume-header,
   .title-header {
-    order: 2; /* Ändra ordningen så att .resume-header och .title-header kommer efter .profilepic */
-    margin-top: 1rem; /* Justera toppmarginalen för att skapa lite utrymme */
+    order: 2; 
+    margin-top: 1rem; 
   }
   .namebox2 {
     display: block;
@@ -208,5 +237,14 @@ p {
   }
   .title-header {
     font-size: 1.5rem;
+  }
+}
+@media print{
+
+  .resume-header{
+    font-size: 2rem;
+  }
+  .title-header{
+    font-size: 1rem;
   }
 }
