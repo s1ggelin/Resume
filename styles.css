@@ -118,12 +118,12 @@ img {
   margin-bottom: 2rem;
 }
 
-.namebox{
+.namebox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 80%;
-  justify-self: center; 
+  justify-self: center;
   margin: auto;
 }
 
@@ -149,7 +149,6 @@ img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-bottom: 3rem;
   margin-top: 1.5rem;
-  
 }
 
 .employment-list {
@@ -175,25 +174,24 @@ img {
 ul,
 li,
 p {
-  font-size: 1.3rem; 
+  font-size: 1.3rem;
 }
 
-.interests p{
+.interests p {
   font-size: 3rem;
   color: #323e8d;
 }
-.interests i{
+.interests i {
   margin: 1.5rem;
 }
 
-.skills ul{
+.skills ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   list-style: none;
-  
 }
 
-.interests .section-header{
+.interests .section-header {
   color: #323e8d;
   margin-left: 0;
   margin-top: 3rem;
@@ -214,8 +212,8 @@ p {
   }
   .resume-header,
   .title-header {
-    order: 2; 
-    margin-top: 1rem; 
+    order: 2;
+    margin-top: 1rem;
   }
   .namebox2 {
     display: block;
@@ -240,15 +238,3 @@ p {
     font-size: 1.5rem;
   }
 }
-@media print{
-
-  .resume-header{
-    font-size: 3rem;
-  }
-  .title-header{
-    font-size: 2rem;
-  }
-*{
-  font-size: 0.9rem;
-}
-} 
