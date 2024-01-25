@@ -186,10 +186,11 @@ p {
   margin: 1.5rem;
 }
 
-.skills li{
+.skills ul{
   display: grid;
-  grid-template-columns: 1fr 1 fr;
+  grid-template-columns: 1fr 1fr;
   list-style: none;
+  
 }
 
 .interests .section-header{
