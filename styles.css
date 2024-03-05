@@ -65,6 +65,9 @@ address {
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
+address p{
+  margin-bottom: 0.5rem;
+}
 
 .profile p {
   margin-bottom: 10px;
@@ -113,9 +116,11 @@ img {
   margin: 2rem;
   font-size: 1.5rem;
 }
-.work-experience .section-header {
+
+.rightcontainer .section-header{
   color: #323e8d;
-  margin-bottom: 2rem;
+  margin: 2rem;
+  margin-left: -0.3rem;
 }
 
 .namebox {
@@ -166,15 +171,20 @@ img {
   margin-bottom: 1rem;
 }
 
-.work-experience .section-header {
-  margin-left: -0.3rem;
-  margin-bottom: 3rem;
-}
-
 ul,
 li,
 p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+}
+
+#education-ul li{
+  margin: 1rem;
+  margin-left: -0.5rem;
+}
+
+.education-list p:last-child {
+  color: #919191;
+  font-size: 1rem;
 }
 
 .interests p {
@@ -199,7 +209,7 @@ p {
 .namebox2 {
   display: none;
 }
-
+ 
 @media (max-width: 767px) {
   .container {
     grid-template-columns: 1fr; /* Ändra layouten till en kolumn på små skärmar */
@@ -236,5 +246,25 @@ p {
   }
   .title-header {
     font-size: 1.5rem;
+  }
+}
+
+@media print{
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .resume-header{
+    font-size: 3rem;
+  }
+  .title-header{
+    font-size: 1.5rem;
+  }
+  .namebox2{
+    display: none;
+  }
+  .namebox{
+    display: block;
   }
 }

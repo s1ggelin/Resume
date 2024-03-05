@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Andreas Siggelins professionella CV med fokus på .NET-utveckling, arbetslivserfarenhet och kompetenser. Studerande vid Teknikhögskolan med en bakgrund inom kundbemötande och projektledning." />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta
+      name="description"
+      content="Andreas Siggelins professionella CV med fokus på .NET-utveckling, arbetslivserfarenhet och kompetenser. Studerande vid Teknikhögskolan med en bakgrund inom kundbemötande och projektledning."
+    />
     <title>Andreas Siggelin CV</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" type="image/x-icon" href="images/Piggelin.ico" />
-</head>
+  </head>
   <body>
     <section>
       <div class="container">
@@ -45,6 +54,15 @@
                 >
               </p>
               <p>
+                <i class="fab fa-github"></i>
+                <a
+                  href="https://github.com/s1ggelin"
+                  target="_blank"
+                  rel="noopener"
+                  >Min GitHub-portfolio</a
+                >
+              </p>
+              <p>
                 <i class="fab fa-linkedin"></i>
                 <a
                   href="https://www.linkedin.com/in/andreassiggelin"
@@ -55,45 +73,19 @@
               </p>
             </address>
           </div>
-          <div class="education">
-            <h3 class="section-header">Utbildning</h3>
-
-            <div class="education-list">
-              <ul>
-                <li>.NET-utvecklare</li>
-                <li>Teknikhögskolan</li>
-                <li>2023-Pågående</li>
-                <li>YH-utbildning med start hösten 2023</li>
-                <li>och examen våren 2025</li>
-              </ul>
-              <ul>
-                <li>Coaching & Sport Management,</li>
-                <li>Linnéuniversitet 2012-2015</li>
-                <li>Idrottsvetenskapligt program, 180</li>
-                <li>högskolepoäng</li>
-              </ul>
-              <ul>
-                <li>Samhällsvetenskapsprogrammet med ekonomisk inriktning,</li>
-                <li>Donnergymnasiet 2006-2010</li>
-              </ul>
-              <ul>
-                <li>Utbytesår Benson Senior High School,</li>
-                <li>Minnesota USA 2008-2009</li>
-              </ul>
-            </div>
-            <div class="skills">
-              <h3 class="section-header">kompetenser</h3>
-              <ul>
-                <li>C#</li>
-                <li>Azure</li>
-                <li>HTML</li>
-                <li>SQL</li>
-                <li>CSS</li>
-                <li>.NET</li>
-                <li>JavaScript</li>
-                <li>EF Core</li>
-              </ul>
-            </div>
+          <div class="skills">
+            <h3 class="section-header">Kompetenser kopplat till .NET</h3>
+            <ul>
+              <li>Azure</li>
+              <li>C#</li>
+              <li>HTML</li>
+              <li>SQL</li>
+              <li>CSS</li>
+              <li>.NET</li>
+              <li>JavaScript</li>
+              <li>EF Core</li>
+              <li>Vue</li>
+            </ul>
           </div>
         </div>
 
@@ -103,7 +95,41 @@
 
             <h2 class="title-header">Studerande .NET-utvecklare</h2>
           </div>
+          <div class="education">
+            <h3 class="section-header">Utbildning</h3>
 
+            <div class="education-list">
+              <ul id="education-ul">
+                <li>
+                  <p><strong>
+                    .NET-utvecklare, Teknikhögskolan | Göteborg |
+                  </strong></p>
+                  <p>AUGUSTI 2023 - MAJ 2025</p>
+                </li>
+                <li>
+                  <p><strong>
+                    Coaching & Sport Management, Linnéuniversitet | Växjö
+                    |
+                  </strong></p>
+                  <p>AUGUSTI 2012 - MAJ 2015</p>
+                </li>
+                <li>
+                  <p><strong>
+                    Samhällsvetenskapsprogrammet med ekonomisk inriktning,
+                    Donnergymnasiet | Gotland |
+                  </strong></p>
+                  <p> AUGUSTI 2006 - JUNI 2010</p>
+                </li>
+                <li>
+                  <p><strong>
+                    Utbytesår, Benson Senior High School | Minnesota, USA | 
+                  </strong></p>
+                  <p> AUGUSTI 2008 - JUNI 2009</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
           <div class="work-experience">
             <h3 class="section-header">Arbetslivserfarenhet</h3>
 
@@ -127,14 +153,6 @@
               idrottsrörelsen genom föreningslivet, både regionalt och
               kommunalt. Framförallt gentemot målen i Strategi 2025, framtagna
               av Riksidrottsförbundet.
-            </p>
-
-            <h4 class="title">Butikssäljare</h4>
-            <p class="company-year">Lager 157, Växjö | Apr 2017 - Aug 2018</p>
-            <p>
-              Arbetsuppgifter som omfattade ansvar för herravdelningen, samt
-              kassatjänst med kundinteraktionen i fokus. Eget ansvar tillämpades
-              dagligen för att färdigställa dagarnas varierande uppgifter.
             </p>
 
             <h4 class="title">Projektkoordinator</h4>
@@ -161,29 +179,6 @@
               jag lärde mig om behovsanalys, samtalsstyrning, kundbemötande,
               samt att hitta snabba och smidiga lösningar.
             </p>
-
-            <h4 class="title">Övriga anställningar</h4>
-            <p class="company-year">2004 - 2020</p>
-            <ul class="employment-list">
-              <li class="employment-item">
-                Folkspel, Göteborg | Nov 2020 - Dec 2020
-              </li>
-              <li class="employment-item">
-                Galvin Green, Växjö | Jan 2017 - Mar 2017
-              </li>
-              <li class="employment-item">
-                Moogoo Skin Skincare, Australien | Jul 2016 - Nov 2016
-              </li>
-              <li class="employment-item">
-                Grace Nightclub, Växjö | Sep 2013 - Sep 2015
-              </li>
-              <li class="employment-item">
-                ICA Supermarket, Hemse, Gotland | Jun 2012 - Aug 2012
-              </li>
-              <li class="employment-item">
-                Konsum Ljugarn, Gotland | Somrarna 2004-2009
-              </li>
-            </ul>
           </div>
           <div class="interests">
             <h3 class="section-header">Intressen</h3>
