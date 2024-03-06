@@ -10,7 +10,6 @@ body {
   max-width: 980px;
   min-height: 100vh;
   margin: auto;
-  padding: auto;
 }
 
 body,
@@ -59,7 +58,8 @@ address a {
   font-style: normal;
 }
 address i {
-  color: brown;
+  color: rgb(195, 31, 31);
+  font-size: large;
 }
 address {
   margin-bottom: 1rem;
@@ -91,7 +91,7 @@ img {
   object-fit: cover;
   object-position: top center;
   border-radius: 50%;
-  box-shadow: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .education-list ul {
   list-style: none;
@@ -199,6 +199,12 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   list-style: none;
+  
+}
+
+.skills i {
+  font-size: 3rem;
+  margin: 0.5rem;
 }
 
 .interests .section-header {
@@ -209,7 +215,9 @@ p {
 .namebox2 {
   display: none;
 }
- 
+
+
+
 @media (max-width: 767px) {
   .container {
     grid-template-columns: 1fr; /* Ändra layouten till en kolumn på små skärmar */
