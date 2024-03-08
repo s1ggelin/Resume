@@ -199,12 +199,19 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   list-style: none;
+  /* margin-right: ; */
   
 }
 
 .skills i {
   font-size: 3rem;
   margin: 0.5rem;
+  text-align: right;
+}
+.skills li{
+  align-content: start;
+  margin-left: 20px;
+  text-align: start;
 }
 
 .interests .section-header {
@@ -247,6 +254,11 @@ p {
   .namebox {
     display: none;
   }
+  .skills i {
+    font-size: 3rem;
+    margin: 0.5rem;
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 560px) {
   .resume-header {
@@ -254,6 +266,11 @@ p {
   }
   .title-header {
     font-size: 1.5rem;
+  }
+  .skills i {
+    font-size: 3rem;
+    margin: 0.5rem;
+    text-align: center;
   }
 }
 
