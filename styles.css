@@ -255,11 +255,14 @@ p {
   }
   .skills ul {
     display: flex;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
   }
 
 .skills li {
-
+margin: 10px;
+text-align: center;
 }
   .skills i {
     font-size: 3rem;
@@ -284,7 +287,6 @@ p {
 
 @media print{
   body {
-    margin: 0;
     padding: 0;
   }
 
