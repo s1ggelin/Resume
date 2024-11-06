@@ -67,9 +67,12 @@ address {
 address p{
   margin-bottom: 0.5rem;
 }
-
+.profile, h3 {
+  margin-bottom: 0rem;
+}
 .profile p {
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 1rem;
   padding: 0.5rem;
 }
 .profilepic {
@@ -92,6 +95,7 @@ img {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 .education-list ul {
   list-style: none;
   margin-bottom: 10px;
@@ -112,8 +116,8 @@ img {
   font-family: "Montserrat", sans-serif;
   color: white;
   text-transform: uppercase;
-  margin: 2rem;
-  font-size: 1.5rem;
+  margin: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .rightcontainer .section-header{
@@ -196,14 +200,14 @@ p {
 
 .skills ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   /* margin-right: ; */
   
 }
 
 .skills i {
-  font-size: 3rem;
+  font-size: 1.5rem;
   margin: 0.5rem;
   text-align: right;
 }
@@ -222,6 +226,20 @@ p {
   display: none;
 }
 
+/* Stil för att göra länken samma färg som vanlig text och fetstilad */
+.custom-link span {
+  font-weight: bold; /* Gör texten fetstilad */
+  color: white; /* Matchar textfärgen i paragrafen */
+  text-decoration: none; /* Tar bort understrykning */
+}
+
+/* Hovringseffekt för länken */
+.custom-link:hover span {
+  background-color: rgb(255, 255, 255); /* Markera texten med bakgrundsfärg vid hovring */
+  color: blue; /* Ändra textfärg för att indikera att det är en länk */
+  text-decoration: underline; /* Understryker länken vid hovring */
+  border-radius: 0.5rem;
+}
 
 
 @media (max-width: 767px) {
