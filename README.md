@@ -19,12 +19,6 @@ I am Andreas Siggelin, a dedicated .NET developer with a passion for problem-sol
 
 This CV is crafted using HTML and CSS, incorporating external resources for icons and fonts.
 
-## Preview
-
-Check out a sneak peek of my CV:
-
-![Andreas Siggelin CV Preview](preview.png)
-
 ## Installation
 
 1. Clone this repository to your local machine:
